@@ -1,15 +1,17 @@
 # TechNavi LoRA Fine-tuning
 
-Fine-tune GPT-OSS-20B with TechNavi YouTube channel knowledge using LoRA on Apple Silicon.
+Fine-tune GPT-OSS-20B using LoRA on Apple Silicon.
 
 ## Quick Start
 
 Run the complete demo:
+
 ```bash
 ./run_full_demo.sh
 ```
 
 Or run steps individually:
+
 ```bash
 # 1. Setup
 ./01_setup_environment.sh && source venv/bin/activate
@@ -21,16 +23,11 @@ Or run steps individually:
 ./04_run_lora_training.sh
 
 # 4. Test model
-python inference.py --adapter-path ./gpt_oss_lora_adapter --prompt "What is TechNavi?"
+python inference.py --adapter-path ./gpt_oss_lora_adapter --prompt "粒が大きいお米は？"
 
 # 5. Compare base vs LoRA
 ./08_compare_lora_inference.sh
 ```
-
-## What it does
-
-- **Before**: Generic model with no TechNavi knowledge
-- **After**: Model knows TechNavi is a YouTube channel with reasoning capabilities
 
 ## Key Features
 
@@ -40,4 +37,4 @@ python inference.py --adapter-path ./gpt_oss_lora_adapter --prompt "What is Tech
 
 ## Training Data
 
-52 examples about TechNavi YouTube channel with reasoning patterns.
+「米」
