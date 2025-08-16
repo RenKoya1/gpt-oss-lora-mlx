@@ -1,4 +1,4 @@
-# TechNavi LoRA Fine-tuning
+# LoRA Fine-tuning
 
 Fine-tune GPT-OSS-20B using LoRA on Apple Silicon.
 
